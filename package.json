@@ -1,6 +1,6 @@
 {
   "name": "epc-sepa-converter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert strings to their EPC217-08 variant",
   "main": "src/index.js",
   "type": "module",
@@ -13,6 +13,7 @@
     "/src",
     "/dist"
   ],
+  "types": "./dist/index.d.ts",
   "author": "Daniel Diekmeier",
   "license": "ISC",
   "scripts": {
