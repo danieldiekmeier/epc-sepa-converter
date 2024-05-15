@@ -1,0 +1,32 @@
+{
+  "name": "epc217-08-sepa-conversion",
+  "version": "0.1.0",
+  "description": "Convert strings to their EPC217-08 variant",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": [
+    "SEPA",
+    "EPC217-08",
+    "ascii"
+  ],
+  "files": [
+    "/src",
+    "/dist"
+  ],
+  "author": "Daniel Diekmeier",
+  "license": "ISC",
+  "scripts": {
+    "generate-map": "node ./bin/generate-map.js",
+    "tsc": "tsc",
+    "test": "node --test",
+    "test:watch": "node --watch --test"
+  },
+  "devDependencies": {
+    "node-xlsx": "^0.24.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "prettier": {
+    "semi": false
+  }
+}
