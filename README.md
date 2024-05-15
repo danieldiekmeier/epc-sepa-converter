@@ -18,13 +18,13 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 ## Installation
 
 ```sh
-npm i epc217-08-sepa-conversion
+npm i epc-sepa-converter
 ```
 
 ## Usage
 
 ```js
-import * as ECP217 from 'epc217-08-sepa-conversion'
+import * as ECP217 from 'epc-sepa-converter'
 
 ECP217.convert("Fußgängerübergänge")
 // => "Fusgangerubergange"
