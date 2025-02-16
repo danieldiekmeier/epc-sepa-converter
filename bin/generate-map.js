@@ -34,7 +34,12 @@ data.forEach((row) => {
       return String.fromCharCode(parseInt(outputCodePoint, 16))
     })
     .join("")
-  console.log(`"${outputCodePoints}", "${to}"`)
+
+  const skip = to === "."
+  console.log(`"${outputCodePoints}" -> "${to}" ${skip ? "(skip)" : ""}`)
+
+  // Skip these, since we fallback to "." anyway.
+  if (skip) return
 
   replacements[from] = to
 })
