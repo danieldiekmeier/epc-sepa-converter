@@ -1,46 +1,54 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-devDependencies:
-  node-xlsx:
-    specifier: ^0.24.0
-    version: 0.24.0
-  prettier:
-    specifier: ^3.2.5
-    version: 3.2.5
-  typescript:
-    specifier: ^5.4.5
-    version: 5.4.5
+importers:
+
+  .:
+    devDependencies:
+      node-xlsx:
+        specifier: ^0.24.0
+        version: 0.24.0
+      prettier:
+        specifier: ^3.5.1
+        version: 3.5.1
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
 
 packages:
 
-  /node-xlsx@0.24.0:
+  node-xlsx@0.24.0:
     resolution: {integrity: sha512-1olwK48XK9nXZsyH/FCltvGrQYvXXZuxVitxXXv2GIuRm51aBi1+5KwR4rWM4KeO61sFU+00913WLZTD+AcXEg==}
     engines: {node: '>=10.0.0'}
     hasBin: true
-    dependencies:
-      xlsx: '@cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz'
-    dev: true
 
-  /prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  prettier@3.5.1:
+    resolution: {integrity: sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: true
 
-  /typescript@5.4.5:
-    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+  typescript@5.7.3:
+    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
-  '@cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz':
+  xlsx@https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz:
     resolution: {tarball: https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz}
-    name: xlsx
     version: 0.20.2
     engines: {node: '>=0.8'}
     hasBin: true
-    dev: true
+
+snapshots:
+
+  node-xlsx@0.24.0:
+    dependencies:
+      xlsx: https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz
+
+  prettier@3.5.1: {}
+
+  typescript@5.7.3: {}
+
+  xlsx@https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz: {}
